@@ -1,0 +1,15 @@
+environment: dev
+market:
+  timezone: America/New_York
+  symbols: [AAPL, MSFT, SPY]
+strategy:
+  name: sma_crossover
+  fast_window: 20
+  slow_window: 60
+risk:
+  max_position_pct: 0.10
+  max_daily_trades: 20
+  kill_switch_drawdown_pct: 0.05
+execution:
+  paper: true
+  broker: paper_broker
